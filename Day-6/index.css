@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+background: linear-gradient(to right, black, rgb(223, 102, 102));
+
+}
+
+
+.cars{
+    display: flex;
+    position: relative; 
+
+}
+
+.car1{
+    position: absolute;
+    width: 100px;
+    right: 10%;
+    height: 200px;
+    background-color: aqua;
+}
+.car2{
+    position: absolute;
+  width: 200px;
+  height: 100px;
+  right: 40%;
+  background-color: green;
+}
+.car3{
+    position: absolute;
+
+   width: 100px;
+   height: 200px;
+   background-color: yellow;
+}
+
+
+.background{
+    height: 100%;
+   width: 100%;
+    position: absolute;
+    top: 30%;
+    background-image: url("https://images.unsplash.com/photo-1519865885898-a54a6f2c7eea?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c3BsYXNofGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=1000");
+    background-position: center;
+    background-repeat: no-repeat;
+    background: linear-gradient(to right black red);
+}
+
