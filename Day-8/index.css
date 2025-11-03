@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    color: white;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif 
+}
+
+.colors-types{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+.color{
+    width: 200px;
+    height:300px;
+    background-color: red;
+    text-align: center;
+   
+}
+.hexadecimal{
+    width: 200px;
+    height:300px;
+    background-color: #ab2685;
+      text-align: center;
+}
+
+.rgb{
+     width: 200px;
+    height:300px;
+    background-color: rgb(155,127,63) ;
+      text-align: center;
+}
+
+.rgba{
+     width: 200px;
+    height:300px;
+    background-color: rgba(255,127,63,0.5);
+      text-align: center;
+}
