@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.main {
+  width: 100%;
+  margin-top: 10rem;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+.main .left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 20px;
+  padding-left: 40px;
+}
+.main .left .top h1 {
+  font-size: 6rem;
+  width: 55%;
+  line-height: 5rem;
+  font-weight: 400;
+  padding-bottom: 10rem;
+}
+.main .left .bottom .color {
+  margin-bottom: 40px;
+  width: 20%;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.main .left .bottom .color .brown {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgb(85, 23, 23);
+}
+.main .left .bottom .color .black {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+}
+.main .left .bottom h3 {
+  padding-bottom: 20px;
+}
+.main .left .bottom p {
+  width: 50%;
+}
+.main .right {
+  display: flex;
+  width: 38%;
+  padding-right: 50px;
+}
+.main .right .right-right {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main .right .right-right .top {
+  display: flex;
+  justify-content: space-between;
+}
+.main .right .right-right .top .rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.main .right .right-right .image img {
+  width: 100%;
+  object-fit: cover;
+  height: 80%;
+}
+.main .right .black-circle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  right: 10%;
+  bottom: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 5px 20px 5px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+.main .right .black-circle p {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.main .right h2 {
+  rotate: -90deg;
+  transform-origin: 0 0;
+  position: absolute;
+  left: 48%;
+  bottom: -10%;
+}
