@@ -58,3 +58,19 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 .vmin{
     font-size: 3vmin;
 }
+
+.media{
+    width: 200px;
+    height: 200px;
+
+
+    background-color: crimson;
+
+}
+
+
+@media (min-width:600px) {
+     .media{
+        background-color: green;
+     }
+}
