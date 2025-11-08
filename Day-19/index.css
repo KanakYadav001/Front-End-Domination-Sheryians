@@ -127,28 +127,127 @@ body {
   font-size: 2rem;
 }
 .main .marque {
-  margin-top: 2rem;
-  width: 100%;
-  height: fit-content;
+  padding: 2rem;
   display: flex;
-  gap: 5rem;
-  overflow: auto;
-}
-.main .marque .elemsnts {
-  white-space: nowrap;
-  flex-shrink: 0;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: 1px solid rgb(255, 255, 255);
+  width: 100%;
   overflow: hidden;
 }
+.main .marque .elemsnts {
+  display: flex;
+  width: max-content;
+  gap: 2rem;
+  animation-name: marque;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
 .main .marque .elemsnts img {
+  display: block;
+  flex: 0 0 auto;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  animation-direction: reverse;
+}
+.main .elemsnts::-webkit-scrollbar {
+  display: none;
+}
+@keyframes marque {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+.main .albhabets {
+  margin-top: 3rem;
+  display: flex;
+  gap: 1.5rem;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 10px 30px;
+  align-items: center;
+  justify-content: center;
+}
+.main .albhabets ::selection {
+  color: red;
+}
+.main .albhabets .circle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+.main .albhabets p {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all linear 0.2s;
+}
+.main .albhabets h2 {
+  color: rgb(0, 0, 0);
+  letter-spacing: 10px;
+  padding-right: 50px;
+}
+.main .albhabets .opacity {
+  opacity: 0.5;
+}
+.main .albhabets p:hover {
+  font-size: 2rem;
+}
+.main .sec1 {
+  display: flex;
+  padding: 5rem;
+  height: fit-content;
+  width: 100%;
+  align-self: center;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.main .sec1 .left {
+  width: 50%;
+}
+.main .sec1 .left img {
+  object-fit: cover;
+  width: 100%;
+  height: 70%;
+  object-position: 0px -40px;
+}
+.main .sec1 .right {
+  width: 50%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding-left: 2rem;
+}
+.main .sec1 .right .top-right {
+  align-items: center;
+  width: 100%;
+}
+.main .sec1 .right .top-right img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
-.main .marque::-webkit-scrollbar {
-  display: none;
+.main .sec1 .right .bottom-right {
+  display: flex;
+  padding-left: 2.5rem;
+  justify-content: space-between;
+}
+.main .sec1 .right .bottom-right h4 {
+  width: 20%;
+}
+.main .sec1 .right .bottom-right p {
+  width: 50%;
 }
