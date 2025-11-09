@@ -390,3 +390,219 @@ body {
 .main .footer .right::selection {
   color: green;
 }
+
+@media (max-width: 600px) {
+  .main {
+    padding: 10px;
+    overflow: hidden;
+  }
+  .main .nav {
+    margin-top: 0.5rem;
+    height: 5vh;
+    padding: 0px 0px;
+  }
+  .main .nav .h-p {
+    padding-right: 0.4rem;
+    line-height: 20px;
+    position: relative;
+  }
+  .main .nav .h-p h1 {
+    padding-top: 0px;
+    font-size: 0.7rem;
+  }
+  .main .nav .h-p h1 sup {
+    font-size: 5px;
+  }
+  .main .nav .h-p .p {
+    background-color: rgba(0, 0, 255, 0.155);
+    font-size: 5px;
+    margin-top: -15px;
+    margin-left: -3.3rem;
+  }
+  .main .nav .para {
+    font-size: 7px;
+    padding-right: 10px;
+  }
+  .main .center {
+    height: 25rem;
+    margin-bottom: 0;
+  }
+  .main .center video {
+    padding: 0px 0rem;
+  }
+  .main .center .img-content {
+    top: 60%;
+    padding: 0px 0px;
+    color: #f0a3a3;
+  }
+  .main .center .img-content .content {
+    padding: 0px 10px;
+  }
+  .main .center .img-content .content h1 {
+    font-size: 12px;
+  }
+  .main .center .img-content .content .circle {
+    border: 2px solid #f0a3a3;
+    color: #f0a3a3;
+  }
+  .main .center .img-content .line {
+    width: 92%;
+    background-color: #f0a3a3;
+    margin: 0px 10px;
+  }
+  .main .center .img-content .p-arrow {
+    color: #f0a3a3;
+    padding: 0px 10px;
+  }
+  .main .marque {
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+  .main .marque .elemsnts {
+    gap: 1rem;
+  }
+  .main .marque .elemsnts img {
+    width: 5rem;
+    height: 5rem;
+  }
+  .main .albhabets {
+    margin-top: 2rem;
+    gap: 0.5rem;
+    padding: 10px 0px;
+  }
+  .main .albhabets ::selection {
+    color: red;
+  }
+  .main .albhabets .circle {
+    width: 20px;
+    height: 20px;
+  }
+  .main .albhabets p {
+    font-size: 5px;
+  }
+  .main .albhabets h2 {
+    font-size: 15px;
+    letter-spacing: 5px;
+    padding-right: 5px;
+  }
+  .main .sec1 {
+    margin-top: 2rem;
+    padding: 0rem;
+    gap: 0.5rem;
+  }
+  .main .sec1 .left img {
+    object-position: 0px -10px;
+  }
+  .main .sec1 .right {
+    gap: 0rem;
+    padding-left: 0rem;
+  }
+  .main .sec1 .right .top-right img {
+    width: 11.6rem;
+    height: 12rem;
+  }
+  .main .sec1 .right .bottom-right {
+    padding-left: 0rem;
+  }
+  .main .sec1 .right .bottom-right h4 {
+    font-size: 0.5rem;
+    width: 50%;
+  }
+  .main .sec1 .right .bottom-right p {
+    font-size: 0.5rem;
+  }
+  .main .heading {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+  .main .sec2 {
+    margin-top: 1rem;
+    padding: 0px 0px;
+  }
+  .main .sec2 .boxes {
+    padding: 10px 10px;
+  }
+  .main .sec2 .boxes p {
+    font-size: 0.7rem;
+  }
+  .main .sec2 .boxes img {
+    width: 50px;
+    height: 50px;
+    left: 10%;
+  }
+  .main .sec2 .boxes .name {
+    width: 20px;
+  }
+  .main .sec2 .boxes .h-p h1,
+  .main .sec2 .boxes .h-p p {
+    font-size: 0.5rem;
+    margin-left: -100px;
+  }
+  .main .sec3 {
+    margin-top: 4rem;
+    padding: 1vh;
+  }
+  .main .sec3 h1 {
+    font-size: 1.9rem;
+  }
+  .main .footer {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .main .footer .left {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    padding: 0px 10px;
+    height: fit-content;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+  .main .footer .left h1 {
+    font-size: 30px;
+  }
+  .main .footer .left p {
+    padding-top: 0px;
+    font-size: 10px;
+  }
+  .main .footer .middle {
+    height: fit-content;
+    width: 100%;
+    padding: 0px 0px;
+    border-bottom: none;
+  }
+  .main .footer .middle p {
+    font-size: 25px;
+  }
+  .main .footer .right {
+    width: 100%;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+  }
+  .main .footer .right .top {
+    padding: 10px 20px;
+    height: 40%;
+    border-bottom: 2px solid black;
+  }
+  .main .footer .right .top h2 {
+    font-size: 1rem;
+  }
+  .main .footer .right .bottom {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    height: 4rem;
+    gap: 0.5rem;
+  }
+  .main .footer .right .bottom p {
+    font-size: 0.9rem;
+  }
+  .main .footer .left::selection,
+  .main .footer .middle::selection,
+  .main .footer .right::selection {
+    color: green;
+  }
+}
