@@ -300,3 +300,93 @@ body {
   opacity: 1;
   left: 35%;
 }
+.main .sec3 {
+  margin-top: 7rem;
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  overflow-y: hidden;
+  overflow-x: auto;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 2vh;
+  white-space: nowrap;
+}
+.main .sec3 h1 {
+  display: inline-block;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  margin-left: 16px;
+  -webkit-text-stroke: 2px black;
+  letter-spacing: 5px;
+}
+.main .sec3 h1::selection {
+  color: green;
+}
+.main .sec3::-webkit-scrollbar {
+  display: none;
+}
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+.main .footer {
+  margin-top: 7rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  display: flex;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.main .footer .left {
+  width: 40%;
+  height: 210px;
+  display: flex;
+  padding: 10px 20px;
+  justify-content: space-between;
+  border-right: 2px solid black;
+}
+.main .footer .left p {
+  padding-top: 15px;
+}
+.main .footer .middle {
+  width: 20%;
+  height: 2rem;
+  padding: 10px 20px;
+}
+.main .footer .middle p {
+  padding-left: 25%;
+  padding-top: 15px;
+}
+.main .footer .right {
+  width: 40%;
+  height: 210px;
+  border-left: 2px solid black;
+}
+.main .footer .right .top {
+  padding: 10px 20px;
+  height: 40%;
+  border-bottom: 2px solid black;
+}
+.main .footer .right .top h2 {
+  font-size: 1rem;
+}
+.main .footer .right .bottom {
+  padding: 10px 20px;
+  height: 1rem;
+  gap: 2.5rem;
+}
+.main .footer .right .bottom p {
+  font-size: 0.9rem;
+}
+.main .footer .left::selection,
+.main .footer .middle::selection,
+.main .footer .right::selection {
+  color: green;
+}
