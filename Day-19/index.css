@@ -6,8 +6,9 @@
 
 html,
 body {
-  height: 100%;
+  height: fit-content;
   width: 100%;
+  background-repeat: no-repeat;
   font-family: "Eater";
 }
 
@@ -207,7 +208,7 @@ body {
 .main .sec1 {
   display: flex;
   padding: 5rem;
-  height: fit-content;
+  height: 80%;
   width: 100%;
   align-self: center;
   gap: 2rem;
@@ -215,6 +216,7 @@ body {
 }
 .main .sec1 .left {
   width: 50%;
+  height: 20%;
 }
 .main .sec1 .left img {
   object-fit: cover;
@@ -224,10 +226,10 @@ body {
 }
 .main .sec1 .right {
   width: 50%;
-  height: 20%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 12rem;
   padding-left: 2rem;
 }
 .main .sec1 .right .top-right {
@@ -250,4 +252,51 @@ body {
 }
 .main .sec1 .right .bottom-right p {
   width: 50%;
+}
+.main .heading {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+}
+.main .sec2 {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0px 6rem;
+}
+.main .sec2 .boxes {
+  padding: 10px 2rem;
+  border-top: 2px solid black;
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .sec2 .boxes img {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  animation-name: hover;
+  left: 15%;
+  transition: all ease 0.7s;
+  opacity: 0;
+}
+.main .sec2 .boxes .name {
+  width: 20px;
+}
+.main .sec2 .boxes .h-p h1,
+.main .sec2 .boxes .h-p p {
+  font-weight: 400;
+  margin-left: -40rem;
+}
+.main .sec2 .boxes:hover img {
+  opacity: 1;
+  left: 35%;
 }
