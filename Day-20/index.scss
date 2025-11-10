@@ -1,0 +1,124 @@
+/* WF Visual Sans — font import examples
+   Option A (Adobe Fonts / Typekit):
+     - Create an Adobe Fonts kit and add the provided <link> to your HTML <head> or use the @import URL.
+     - Example (replace <your-kit-id> with your kit id):
+         <!-- in index.html head -->
+         <link rel="stylesheet" href="https://use.typekit.net/<your-kit-id>.css">
+       or in SCSS (not recommended for performance but supported):
+         @import url("https://use.typekit.net/<your-kit-id>.css");
+
+   Option B (Self-host / local files):
+     - Place font files in ./fonts (e.g. WFVisualSans-Regular.woff2, WFVisualSans-Bold.woff2).
+     - The @font-face rules below show a standard setup. Update filenames to match your assets.
+*/
+
+// @font-face {
+//   font-family: "WF Visual Sans";
+//   src: local("WF Visual Sans"), local("WFVisualSans"),
+//     url("./fonts/WFVisualSans-Regular.woff2") format("woff2"),
+//     url("./fonts/WFVisualSans-Regular.woff") format("woff");
+//   font-weight: 400;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "WF Visual Sans";
+//   src: local("WF Visual Sans Bold"), local("WFVisualSans-Bold"),
+//     url("./fonts/WFVisualSans-Bold.woff2") format("woff2"),
+//     url("./fonts/WFVisualSans-Bold.woff") format("woff");
+//   font-weight: 700;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+
+body {
+  font-family: "WF Visual Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.main {
+  width: 100%;
+  height: 100%;
+
+  .nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+
+    .left {
+      width: 30%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    img {
+      width: 10vw;
+    }
+    .right {
+      padding-right: 25px;
+      display: flex;
+      width: 30%;
+      justify-content: flex-end;
+      gap: 5px;
+
+      .login {
+        background-color: transparent;
+        color: black;
+      }
+
+      button {
+        border: none;
+        background-color: black;
+        border-radius: 20px;
+        padding: 10px 20px;
+        color: white;
+      }
+    }
+  }
+
+  .sec1 {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+
+    .top {
+      width: fit-content;
+      background-color: pink;
+      border-radius: 20px;
+      padding: 10px 20px;
+    }
+    h1 {
+      width: fit-content;
+      text-align: center;
+      font-size: 3.9rem;
+      font-family: "WF Visual Sans";
+    }
+
+    button {
+      border: none;
+      background-color: black;
+      border-radius: 20px;
+      padding: 10px 20px;
+      color: white;
+    }
+  }
+}
