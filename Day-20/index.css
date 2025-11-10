@@ -1,5 +1,14 @@
-
-
+@font-face {
+  font-family: "WF Visual Sans";
+  src: url("./font/font1.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "WF Visual Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 * {
   margin: 0;
@@ -7,10 +16,10 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
- 
 }
 
 .main {
@@ -68,6 +77,8 @@ html, body {
   width: fit-content;
   text-align: center;
   font-size: 3.9rem;
+  line-height: 55px;
+  font-family: "WF Visual Sans";
 }
 .main .sec1 button {
   border: none;
@@ -75,4 +86,49 @@ html, body {
   border-radius: 20px;
   padding: 10px 20px;
   color: white;
+}
+.main .sec2 {
+  margin-top: 4rem;
+  height: 300px;
+  width: 100%;
+  overflow-x: hidden;
+  white-space: nowrap;
+  overflow-y: hidden;
+}
+.main .sec2 .element {
+  width: 250px;
+  overflow: hidden;
+  height: 300px;
+  margin-left: 20px;
+  display: inline-block;
+  background-color: gray;
+  border-radius: 20px;
+  animation-name: move;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 7s;
+}
+.main .sec2 .element img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.main .sec2 .element video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.main .sec2::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 24px));
+  }
 }
