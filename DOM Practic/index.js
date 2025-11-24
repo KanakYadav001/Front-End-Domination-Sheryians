@@ -40,23 +40,40 @@
 // })
 
 
-let input  = document.querySelector('input')
-let ul = document.querySelector('ul')
-let li ;
-let add = document.querySelector('.add')
-let remove = document.querySelector('.remove')
+// let input  = document.querySelector('input')
+// let ul = document.querySelector('ul')
+// let li ;
+// let add = document.querySelector('.add')
+// let remove = document.querySelector('.remove')
 
 
-add.addEventListener('click', function() {
-    if(input.value.trim() === ""){}
-    else {
-    li =document.createElement('li')
-    li.textContent = input.value
-    ul.appendChild(li)
-    input.value = ""
-    }
+// add.addEventListener('click', function() {
+//     if(input.value.trim() === ""){}
+//     else {
+//     li =document.createElement('li')
+//     li.textContent = input.value
+//     ul.appendChild(li)
+//     input.value = ""
+//     }
+// })
+
+// remove.addEventListener('click',function() {
+//     ul.removeChild(li)
+// })
+
+
+let h3  = document.querySelector('h3')
+let start =document.querySelector('.start')
+let stop  = document.querySelector('.stop')
+let intervel ;
+start.addEventListener('click', function() {
+    let count = 0
+    intervel = setInterval(function() {
+        h3.textContent = count
+        count++
+    },500)
 })
 
-remove.addEventListener('click',function() {
-    ul.removeChild(li)
+stop.addEventListener('click',function() {
+    clearInterval(intervel)
 })
