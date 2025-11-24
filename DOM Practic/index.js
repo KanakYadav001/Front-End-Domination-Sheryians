@@ -20,21 +20,43 @@
 // })
 
 
-let form  = document.querySelector('form')
-let input = document.querySelectorAll('input[type="text"]')
-let p = document.querySelector('p')
+// let form  = document.querySelector('form')
+// let input = document.querySelectorAll('input[type="text"]')
+// let p = document.querySelector('p')
 
 
 
-form.addEventListener('submit', function(ev) {
-    ev.preventDefault()
-    for(let i=0 ; i<input.length ; i++) {
-        if(input[i].value.trim() === ''){
-            p.textContent = "Please Fill The Filds First",
-            p.style.color = "red"
-        }
-        else { 
-            p.textContent = ""
-        }
+// form.addEventListener('submit', function(ev) {
+//     ev.preventDefault()
+//     for(let i=0 ; i<input.length ; i++) {
+//         if(input[i].value.trim() === ''){
+//             p.textContent = "Please Fill The Filds First",
+//             p.style.color = "red"
+//         }
+//         else { 
+//             p.textContent = ""
+//         }
+//     }
+// })
+
+
+let input  = document.querySelector('input')
+let ul = document.querySelector('ul')
+let li ;
+let add = document.querySelector('.add')
+let remove = document.querySelector('.remove')
+
+
+add.addEventListener('click', function() {
+    if(input.value.trim() === ""){}
+    else {
+    li =document.createElement('li')
+    li.textContent = input.value
+    ul.appendChild(li)
+    input.value = ""
     }
+})
+
+remove.addEventListener('click',function() {
+    ul.removeChild(li)
 })
