@@ -62,18 +62,32 @@
 // })
 
 
-let h3  = document.querySelector('h3')
-let start =document.querySelector('.start')
-let stop  = document.querySelector('.stop')
-let intervel ;
-start.addEventListener('click', function() {
-    let count = 0
-    intervel = setInterval(function() {
-        h3.textContent = count
-        count++
-    },500)
+let home = document.querySelector('.home')
+let homec = document.querySelector('.homec')
+let about = document.querySelector('.about')
+let aboutc = document.querySelector('.aboutc')
+let contact = document.querySelector('.contact')
+let contactc  = document.querySelector('.contactc')
+
+home.addEventListener('click',function() {
+    removeAllPara()
+    homec.style.display = 'block'
+    
+
+})
+about.addEventListener('click',function() {
+       removeAllPara()
+    aboutc.style.display = 'block'
+   
 })
 
-stop.addEventListener('click',function() {
-    clearInterval(intervel)
+contact.addEventListener('click',function() {
+         removeAllPara()
+    contactc.style.display = 'block'
 })
+
+function removeAllPara() {
+     document.querySelectorAll('p').forEach(function (p) {
+       p.style.display = "none"
+    })
+}
