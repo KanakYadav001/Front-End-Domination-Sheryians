@@ -62,32 +62,46 @@
 // })
 
 
-let home = document.querySelector('.home')
-let homec = document.querySelector('.homec')
-let about = document.querySelector('.about')
-let aboutc = document.querySelector('.aboutc')
-let contact = document.querySelector('.contact')
-let contactc  = document.querySelector('.contactc')
+// let home = document.querySelector('.home')
+// let homec = document.querySelector('.homec')
+// let about = document.querySelector('.about')
+// let aboutc = document.querySelector('.aboutc')
+// let contact = document.querySelector('.contact')
+// let contactc  = document.querySelector('.contactc')
 
-home.addEventListener('click',function() {
-    removeAllPara()
-    homec.style.display = 'block'
+// home.addEventListener('click',function() {
+//     removeAllPara()
+//     homec.style.display = 'block'
     
 
-})
-about.addEventListener('click',function() {
-       removeAllPara()
-    aboutc.style.display = 'block'
+// })
+// about.addEventListener('click',function() {
+//        removeAllPara()
+//     aboutc.style.display = 'block'
    
-})
+// })
 
-contact.addEventListener('click',function() {
-         removeAllPara()
-    contactc.style.display = 'block'
-})
+// contact.addEventListener('click',function() {
+//          removeAllPara()
+//     contactc.style.display = 'block'
+// })
 
-function removeAllPara() {
-     document.querySelectorAll('p').forEach(function (p) {
-       p.style.display = "none"
-    })
-}
+// function removeAllPara() {
+//      document.querySelectorAll('p').forEach(function (p) {
+//        p.style.display = "none"
+//     })
+// }
+
+
+
+let h3 = document.querySelector('h3')
+let progress = document.querySelector('.progress')
+let count =0 ;
+let int = setInterval(function() {
+    if(count===100) {
+        clearInterval(int)
+        h3.style.opacity = 1
+    }
+    count++
+    progress.style.width = count +"%"
+},50)
