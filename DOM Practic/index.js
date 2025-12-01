@@ -172,9 +172,22 @@
 
 
 
-let textarea = document.querySelector('textarea')
-let counter = document.querySelector('.count')
+// let textarea = document.querySelector('textarea')
+// let counter = document.querySelector('.count')
 
-textarea.addEventListener('input',function() { 
-     counter.textContent = textarea.value.length
+// textarea.addEventListener('input',function() { 
+//      counter.textContent = textarea.value.length
+// })
+
+
+
+let progressbar = document.querySelector('.progressbar')
+
+
+window.addEventListener('scroll', function() {
+    let scroll = window.scrollY
+    let docHeight = document.body.scrollHeight - window.innerHeight
+    let scrollPercent = (scroll /docHeight) *100
+
+    progressbar.style.width = scrollPercent + "%"
 })
