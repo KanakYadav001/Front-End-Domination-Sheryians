@@ -95,78 +95,86 @@
 //     progress.style.width = count +"%"
 // },50)
 
-let data = [
-  {
-    name: "Yashi",
-    src: "https://images.unsplash.com/photo-1762770640764-bfb05d380670?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDQ0fHRvd0paRnNrcEdnfHxlbnwwfHx8fHw%3D",
-  },
-  {
-    name: "Sparsh",
-    src: "https://images.unsplash.com/photo-1763598363324-cd072a67dc61?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDY3fHRvd0paRnNrcEdnfHxlbnwwfHx8fHw%3D",
-  },
-  {
-    name: "Mario",
-    src: "https://images.unsplash.com/photo-1762391965624-279023a2481d?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEzMXx0b3dKWkZza3BHZ3x8ZW58MHx8fHx8",
-  },
-  {
-    name: "Aman",
-    src: "https://images.unsplash.com/photo-1762757076979-cc016f6df284?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE2M3x0b3dKWkZza3BHZ3x8ZW58MHx8fHx8",
-  },
-  {
-    name: "Cheeky",
-    src: "https://images.unsplash.com/photo-1761522002071-67755dc6c820?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE3M3x0b3dKWkZza3BHZ3x8ZW58MHx8fHx8",
-  },
-   {
-    name: "Dhruv",
-    src: "https://plus.unsplash.com/premium_photo-1761298779249-1165dd0f3fb9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDI4NHx0b3dKWkZza3BHZ3x8ZW58MHx8fHx8",
-  },
-   {
-    name: "Manthan",
-    src: "https://images.unsplash.com/photo-1741732311355-808c468deb4e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDIzOHx0b3dKWkZza3BHZ3x8ZW58MHx8fHx8",
-  },
-   {
-    name: "Vaibhav",
-    src: "https://images.unsplash.com/photo-1761872936205-88ce12255c24?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDI0MHx0b3dKWkZza3BHZ3x8ZW58MHx8fHx8",
-  },
-];
+// let data = [
+//   {
+//     name: "Yashi",
+//     src: "https://images.unsplash.com/photo-1762770640764-bfb05d380670?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDQ0fHRvd0paRnNrcEdnfHxlbnwwfHx8fHw%3D",
+//   },
+//   {
+//     name: "Sparsh",
+//     src: "https://images.unsplash.com/photo-1763598363324-cd072a67dc61?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDY3fHRvd0paRnNrcEdnfHxlbnwwfHx8fHw%3D",
+//   },
+//   {
+//     name: "Mario",
+//     src: "https://images.unsplash.com/photo-1762391965624-279023a2481d?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEzMXx0b3dKWkZza3BHZ3x8ZW58MHx8fHx8",
+//   },
+//   {
+//     name: "Aman",
+//     src: "https://images.unsplash.com/photo-1762757076979-cc016f6df284?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE2M3x0b3dKWkZza3BHZ3x8ZW58MHx8fHx8",
+//   },
+//   {
+//     name: "Cheeky",
+//     src: "https://images.unsplash.com/photo-1761522002071-67755dc6c820?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE3M3x0b3dKWkZza3BHZ3x8ZW58MHx8fHx8",
+//   },
+//    {
+//     name: "Dhruv",
+//     src: "https://plus.unsplash.com/premium_photo-1761298779249-1165dd0f3fb9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDI4NHx0b3dKWkZza3BHZ3x8ZW58MHx8fHx8",
+//   },
+//    {
+//     name: "Manthan",
+//     src: "https://images.unsplash.com/photo-1741732311355-808c468deb4e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDIzOHx0b3dKWkZza3BHZ3x8ZW58MHx8fHx8",
+//   },
+//    {
+//     name: "Vaibhav",
+//     src: "https://images.unsplash.com/photo-1761872936205-88ce12255c24?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDI0MHx0b3dKWkZza3BHZ3x8ZW58MHx8fHx8",
+//   },
+// ];
 
 
-let profiles = document.querySelector('.profiles')
-let input = document.querySelector('input')
-let show = ""
+// let profiles = document.querySelector('.profiles')
+// let input = document.querySelector('input')
+// let show = ""
 
-data.forEach(function(e) {
-  show += `
-  <div class="profile">
-       <div class="image">
-        <img src="${e.src}" alt="img">
-       </div>
-        <h3>${e.name}</h3>
-    </div>
-  `
+// data.forEach(function(e) {
+//   show += `
+//   <div class="profile">
+//        <div class="image">
+//         <img src="${e.src}" alt="img">
+//        </div>
+//         <h3>${e.name}</h3>
+//     </div>
+//   `
 
+// })
+// profiles.innerHTML = show
+
+
+
+
+// input.addEventListener('input', function() {
+//   let match  =  data.filter(function(e) {
+//     return  e.name.startsWith(input.value)
+//   })
+//   let newUser = "" ;
+//   match.forEach(function(ele){
+//     newUser +=`
+//     <div class="profile">
+//        <div class="image">
+//         <img src="${ele.src}" alt="img">
+//        </div>
+//         <h3>${ele.name}</h3>
+//     </div>`
+//   })
+
+//   profiles.innerHTML = newUser
+// })
+
+
+
+
+let textarea = document.querySelector('textarea')
+let counter = document.querySelector('.count')
+
+textarea.addEventListener('input',function() { 
+     counter.textContent = textarea.value.length
 })
-profiles.innerHTML = show
-
-
-
-
-input.addEventListener('input', function() {
-  let match  =  data.filter(function(e) {
-    return  e.name.startsWith(input.value)
-  })
-  let newUser = "" ;
-  match.forEach(function(ele){
-    newUser +=`
-    <div class="profile">
-       <div class="image">
-        <img src="${ele.src}" alt="img">
-       </div>
-        <h3>${ele.name}</h3>
-    </div>`
-  })
-
-  profiles.innerHTML = newUser
-})
-
-
